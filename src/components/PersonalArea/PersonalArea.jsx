@@ -10,7 +10,7 @@ import styles from "./personalArea.module.css";
 
 const PersonalArea = () => {
   const [drag, setDrag] = useState(false);
-  const [active, setActive] = useState("reviews");
+  const [active, setActive] = useState("info");
 
   const navigate = useNavigate();
 

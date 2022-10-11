@@ -242,6 +242,7 @@
   align-items: center;
   text-decoration: none;
   color: black;
+  margin-right: 100px;
 }
 
 .chat_link img {

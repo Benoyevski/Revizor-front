@@ -49,10 +49,7 @@ const Header = () => {
             </p>
           )}
 
-          <div className={styles.review}>
-            <img src={"http://localhost:4000/public/pencil.png"} alt="" />
-            <p>Отзыв</p>
-          </div>
+        
           {id ? (
             <div>
               <Link to={`/personal/${id}`} className={styles.profil}>
