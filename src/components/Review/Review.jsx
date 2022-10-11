@@ -151,7 +151,6 @@ const Review = () => {
 
       <div className={styles.reverse}>
         {reviews.map((item) => {
-          console.log(item.diner);
           if (item.diner._id === dinerId) {
             return (
               <div className={styles.commentMain}>
