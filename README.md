@@ -73,7 +73,7 @@ npm run dev
 
 <h3>
   <a href="https://github.com/SulimanVu">
-    <img alt="Gudeshev" src="https://img.shields.io/badge/-Abdul-Nasir_Gudeshev-black?style=for-the-badge&logo=github&logoColor=white" />
+    <img alt="Gudeshev" src="https://img.shields.io/badge/-Abdul_Nasir_Gudeshev-black?style=for-the-badge&logo=github&logoColor=white" />
   </a>
 </h3>
 
