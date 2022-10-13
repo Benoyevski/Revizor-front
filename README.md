@@ -54,31 +54,31 @@ npm run dev
 ## Команда проекта
 
 <h3>
-  <a href="https://github.com/SulimanVu">
+  <a href="https://github.com/Benoyevski">
     <img alt="Ayubov" src="https://img.shields.io/badge/-Ismail_Ayubov-black?style=for-the-badge&logo=github&logoColor=white" />
   </a>
 </h3>
 
 <h3>
-  <a href="https://github.com/SulimanVu">
+  <a href="https://github.com/DjibrilSS">
     <img alt="Sadulaev" src="https://img.shields.io/badge/-Djabrail_Sadulaev-black?style=for-the-badge&logo=github&logoColor=white" />
   </a>
 </h3>
 
 <h3>
-  <a href="https://github.com/SulimanVu">
+  <a href="https://github.com/Ayubax">
     <img alt="Adzhiev" src="https://img.shields.io/badge/-Ayub_Adzhiev-black?style=for-the-badge&logo=github&logoColor=white" />
   </a>
 </h3>
 
 <h3>
-  <a href="https://github.com/SulimanVu">
+  <a href="https://github.com/GooA-NA">
     <img alt="Gudeshev" src="https://img.shields.io/badge/-Abdul_Nasir_Gudeshev-black?style=for-the-badge&logo=github&logoColor=white" />
   </a>
 </h3>
 
 <h3>
-  <a href="https://github.com/SulimanVu">
+  <a href="https://github.com/bon-cy">
     <img alt="Nikerhoev" src="https://img.shields.io/badge/-Islam_Nikerhoev-black?style=for-the-badge&logo=github&logoColor=white" />
   </a>
 </h3>
