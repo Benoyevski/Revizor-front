@@ -15,6 +15,11 @@
 - Добавление аватарки пользователем
 - Общий ЧАТ в реальном времени на соккетах
 
+## Несколько скринов 
+![Screenshot 1](https://user-images.githubusercontent.com/105605980/195598552-fec6f6a1-92dd-4c9a-a590-761d8c20ab16.jpeg)
+![Screenshot 2](https://user-images.githubusercontent.com/105605980/195598577-d38a773f-f129-4902-a91d-dd98a12a4df0.jpeg)
+![Screenshot 3](https://user-images.githubusercontent.com/105605980/195598584-1c1d7e05-39f0-4cb8-b465-1642c1f589c1.jpeg)
+![Screenshot 4](https://user-images.githubusercontent.com/105605980/195598590-0a304411-2c9b-412c-bd85-b6c5f8af5722.jpeg)
 
 
 ## Запуск проекта
