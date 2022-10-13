@@ -14,6 +14,7 @@ const Diner = () => {
   
   useEffect(() => {
     dispatch(fetchDiners());
+    window.scrollTo(0, 0)
   }, [dispatch]);
 
   const diners = useSelector((state) => state.diners.diners);

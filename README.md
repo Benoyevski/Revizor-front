@@ -1,70 +1,130 @@
-# Getting Started with Create React App
+# Сайт каталог с рейтингами ресторанов города Грозного
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p> Это групповой проект, выполненный студентами школы программирования <a href="https://intocode.ru/" target="_blank">Intocode</a></p>
 
-## Available Scripts
+## Функционал сайта
 
-In the project directory, you can run:
+- Авторизация
+- Просмотр ресторанов на карте
+- Просмотр ресторанов с фото, рейтингом и адресом
+- Фильтрация ресторанов по типу(ресторан, кафе, фастфуд)
+- Фильтрация по среднему чеку
+- Добавление отзыва с оценкой
+- Просмотр каждого ресторана для просмотра информации, фотографий и меню
+- Добавление и удаление ресторанов в избранное
+- Добавление аватарки пользователем
+- Общий ЧАТ в реальном времени на соккетах
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Запуск проекта
 
-### `npm test`
+Для запуска проекта вам необходимо набрать команду в терминале:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```javascript
+npm i
+```
 
-### `npm run build`
+После набрать команду:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```javascript
+npm run dev
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Технологии проекта
 
-### `npm run eject`
+<p>
+- Github
+- Redux
+- Redux-thunk
+- JSON-Server
+- React-Router
+- Prettier
+- git 
+- Node.js
+- JavaScript
+</p>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Команда проекта
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<h3>
+  <a href="https://github.com/SulimanVu">
+    <img alt="Ayubov" src="https://img.shields.io/badge/-Ismail_Ayubov-black?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</h3>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<h3>
+  <a href="https://github.com/SulimanVu">
+    <img alt="Sadulaev" src="https://img.shields.io/badge/-Djabrail_Sadulaev-black?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</h3>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<h3>
+  <a href="https://github.com/SulimanVu">
+    <img alt="Adzhiev" src="https://img.shields.io/badge/-Ayub_Adzhiev-black?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</h3>
 
-## Learn More
+<h3>
+  <a href="https://github.com/SulimanVu">
+    <img alt="Gudeshev" src="https://img.shields.io/badge/-Abdul-Nasir_Gudeshev-black?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</h3>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<h3>
+  <a href="https://github.com/SulimanVu">
+    <img alt="Nikerhoev" src="https://img.shields.io/badge/-Islam_Nikerhoev-black?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</h3>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### В этом проекте я выполнял следующие задачи:
 
-### Analyzing the Bundle Size
+- [x] Создать react приложение
+- [x] Организовать роутинг-маршрутизация внутри проекта
+- [x] Создание и контроль веток git
+- [x] Сделал Header с логотипом и кнопками
+- [x] Сверстал блок с картинкой и инпутом под хедером
+- [x] Сделал чат в реальном времени
+- [x] Сверстал страницу личного кабинета и сделал навигацию в ней
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Создал реакт-приложение</br>
+Из проекта удалил лишние файлы и создал нужные для начала работы папки и компоненты <br>
+Установил следующие библиотеки в зависимости:
 
-### Advanced Configuration
+- react-redux
+- redux
+- react-router-dom
+- redux-toolkit
+- prettier
+- react-loader-spinner
+- prop-types
+- axios 
+- react-scroll-to-bottom
+- timeago.js
+- socket.io-client
+- bcrypt
+- cors
+- dotenv
+- express
+- mongoose
+- morgan
+- multer
+- jsonwebtoken
+- nodemon
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+### Для выполнения поставленных задач я использовал следующие библиотеки:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- redux, redux-toolkit - чтобы создавать асинхронные экшены
+- react-router-dom - для роутинга
+- react-loader-spinner - для прелоадеров
+- socket.io - для создания чата
+- axios - для запросов в бд в чате
+- timeago.js - для вывода времени сообщения в чате
