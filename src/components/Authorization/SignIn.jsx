@@ -5,6 +5,7 @@ import { authSignIn } from "../../features/applicationSlice";
 import styles from "../Authorization/auth.module.css";
 import { ColorRing } from "react-loader-spinner";
 
+
 const SignIn = ({ setModal, setToReg }) => {
   const dispatch = useDispatch();
   const load = useSelector((state) => state.application.load);

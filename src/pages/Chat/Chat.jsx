@@ -17,7 +17,6 @@ const Chat = ({ socket, username, room, avatar }) => {
         const res = await axios.get("http://localhost:4000/messages");
         setMessages(res.data);
       } catch (error) {
-        console.log(error);
       }
     };
     getMessages();

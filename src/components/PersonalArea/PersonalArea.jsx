@@ -28,7 +28,7 @@ const PersonalArea = () => {
   const reviews = useSelector((state) => state.comments.reviews);
 
   const userReviews = reviews.filter((item) => item.user._id === id);
-  console.log(reviews);
+
   function dragStartHandler(e) {
     e.preventDefault(e);
     setDrag(true);
