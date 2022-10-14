@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { fetchDiners, middlePrice, type } from "../../features/dinerSlice";
+import { fetchDiners, type } from "../../features/dinerSlice";
 import styles from "./saidBar.module.css";
 
 const SaidBar = ({price, setPrice}) => {

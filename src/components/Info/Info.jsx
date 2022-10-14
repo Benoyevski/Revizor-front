@@ -1,7 +1,5 @@
 import styles from "./info.module.css";
-
 import React from "react";
-import { click } from "@testing-library/user-event/dist/click";
 
 const Info = () => {
   return (

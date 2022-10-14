@@ -9,7 +9,6 @@ import { ColorRing } from "react-loader-spinner";
 const Cards = () => {
   const diners = useSelector((state) => state.diners.filterDiners);
   const [price, setPrice] = useState("");
-  console.log(diners)
 
   const load = useSelector((state) => state.diners.load);
 

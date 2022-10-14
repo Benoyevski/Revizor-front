@@ -35,7 +35,6 @@ const Card = ({ diner }) => {
     dispatch(addLike({ dinerId, userId }));
   }
   function handleDislike() {
-    console.log("dis");
     dispatch(addDislike({ dinerId, userId }));
   }
   return (
@@ -57,7 +56,6 @@ const Card = ({ diner }) => {
         <img src={`http://localhost:4000/img/${diner.name}.jpg`} alt="" />
       </div>
       <h3>{diner.name}</h3>
-      {/* <hr /> */}
       <span>{star.map((item, index)=>{
         return(
           <span key={index} className={(diner.rating > index) ? styles.rating: styles.ratingDis}>{item}</span>

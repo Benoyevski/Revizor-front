@@ -19,7 +19,6 @@ const DinerGallery = ({ diner }) => {
     if (offset === -2400) {
       setOffset(0);
     }
-    console.log(offset);
   };
 
   const handleLeft = () => {
@@ -30,7 +29,6 @@ const DinerGallery = ({ diner }) => {
       setOffset(-2400);
     }
 
-    console.log(offset);
   };
 
   return (
