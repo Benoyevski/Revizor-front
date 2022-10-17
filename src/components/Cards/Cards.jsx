@@ -16,7 +16,7 @@ const Cards = () => {
   useEffect(() => {
     dispatch(fetchDiners());
   }, [dispatch]);
-  const filter = diners.filter((diner) => {
+  const filter = diners?.filter((diner) => {
     return diner.middlePrice <= price;
   });
 
