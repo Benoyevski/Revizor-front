@@ -1,4 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import { serverUrl } from '../serverUrl';
+
 
 const initialState = {
   users: [],

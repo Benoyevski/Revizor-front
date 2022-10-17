@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserSecret } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-import { serverUrl } from '/serverUrl.js';
+import { serverUrl } from '../../serverUrl'
 
 
 const Header = () => {
