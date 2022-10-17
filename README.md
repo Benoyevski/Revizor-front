@@ -1,6 +1,7 @@
 # Сайт каталог с рейтингами ресторанов города Грозного
 
 <p> Это групповой проект, выполненный студентами школы программирования <a href="https://intocode.ru/" target="_blank">Intocode</a></p>
+<a href="https://revizor-front.onrender.com/" target="_blank">Демо</a> 
 
 ## Функционал сайта
 
