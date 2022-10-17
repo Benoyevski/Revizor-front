@@ -7,7 +7,7 @@ const initialState = {
 
 export const fetchUsers = createAsyncThunk("get/users", async (_, thunkAPI) => {
   try {
-    const res = await fetch("http://localhost:4000/users");
+    const res = await fetch(`${serverUrl}/users`);
     const users = res.json();
     return users;
   } catch (e) {
@@ -20,7 +20,7 @@ export const addAvatar = createAsyncThunk(
     try {
       const formData = new FormData();
       formData.append("file", file);
-      const res = await fetch(`http://localhost:4000/user/${id}`, {
+      const res = await fetch(`${serverUrl}/user/${id}`, {
         method: "POST",
         body: formData,
       });
@@ -35,7 +35,7 @@ export const addLike = createAsyncThunk(
   "post/like",
   async ({ dinerId, userId }, thunkAPI) => {
     try {
-      const res = await fetch("http://localhost:4000/like", {
+      const res = await fetch(`${serverUrl}/like`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -53,7 +53,7 @@ export const addDislike = createAsyncThunk(
   "post/dislike",
   async ({ dinerId, userId }, thunkAPI) => {
     try {
-      const res = await fetch("http://localhost:4000/dislike", {
+      const res = await fetch(`${serverUrl}/dislike`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

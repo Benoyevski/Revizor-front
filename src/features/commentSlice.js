@@ -9,7 +9,7 @@ export const fetchReviews = createAsyncThunk(
   "reviews/get",
   async (_, thunkAPI) => {
     try {
-      const res = await fetch("http://localhost:4000/review");
+      const res = await fetch(`${serverUrl}/review`);
       const reviews = res.json();
       return reviews;
     } catch (e) {
@@ -22,7 +22,7 @@ export const addReview = createAsyncThunk(
   "post/review",
   async ({ text, plus, minus, rating, dinerId }, thunkAPI) => {
     try {
-      const res = await fetch(`http://localhost:4000/diner`, {
+      const res = await fetch(`${serverUrl}/diner`, {
         method: "POST",
         headers: {
           Authorization: `Bearer ${thunkAPI.getState().application.token}`,
