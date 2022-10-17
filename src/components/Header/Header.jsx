@@ -5,6 +5,8 @@ import { useSelector } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserSecret } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import { serverUrl } from '/serverUrl.js';
+
 
 const Header = () => {
   const token = useSelector((state) => state.application.token);
@@ -23,7 +25,7 @@ const Header = () => {
       <div className={styles.header}>
         <div className={styles.header_items}>
           <div className={styles.logo}>
-            <img src={"http://localhost:4000/public/logo.png"} alt="" />
+            <img src={`${serverUrl}/public/logo.png`} alt="" />
           </div>
           <p>
             <Link to="/" className={styles.site_name}>
@@ -34,7 +36,7 @@ const Header = () => {
             <input className={styles.header_input} type="text" />
             <img
               className={styles.lupa}
-              src={"http://localhost:4000/public/lupa.png"}
+              src={`${serverUrl}/public/lupa.png`}
               alt=""
             />
           </div>
@@ -43,7 +45,7 @@ const Header = () => {
           {token && (
             <p>
               <Link to="/chat" className={styles.chat_link}>
-                <img src={"http://localhost:4000/public/chat.png"} alt="" />
+                <img src={`${serverUrl}/public/chat.png`} alt="" />
                 Чат
               </Link>
             </p>
