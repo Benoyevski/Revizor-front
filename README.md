@@ -44,6 +44,7 @@ npm run dev
 - Github
 - Redux
 - Redux-thunk
+- Socket.io/Socket.io-client
 - JSON-Server
 - React-Router
 - Prettier
