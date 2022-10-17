@@ -10,7 +10,7 @@ export const fetchDiners = createAsyncThunk(
   "diner/get",
   async (_, thunkAPI) => {
     try {
-      const res = await fetch("http://localhost:4000/diner");
+      const res = await fetch(`${serverUrl}/diner`);
       const diners = res.json();
       return diners;
     } catch (e) {
@@ -23,7 +23,7 @@ export const rateDiner = createAsyncThunk(
   "rate/diner",
   async ({ rating, dinerId }, thunkAPI) => {
     try {
-      const res = await fetch(`http://localhost:4000/rating`, {
+      const res = await fetch(`${serverUrl}/rating`, {
         method: "PATCH",
         headers: {
           Authorization: `Bearer ${thunkAPI.getState().application.token}`,
