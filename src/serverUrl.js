@@ -5,5 +5,5 @@ export let serverUrl;
 if(NODE_ENV === 'development') {
   serverUrl = 'http://localhost:4000' // адрес сервера на локалке
 } else {
-  serverUrl = 'https://revizor-front.onrender.com/'; // адрес сервера после выгрузки
+  serverUrl = 'https://revizor-back.onrender.com'; // адрес сервера после выгрузки
 }
