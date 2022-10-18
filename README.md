@@ -41,16 +41,33 @@ npm run dev
 ## Технологии проекта
 
 <p>
-- Github
+
+- React
 - Redux
 - Redux-thunk
+- Redux-toolkit
 - Socket.io/Socket.io-client
+- axios 
+- react-loader-spinner
+- timeago.js
 - JSON-Server
 - React-Router
 - Prettier
+- Github
 - git 
 - Node.js
 - JavaScript
+- bcrypt
+- cors
+- dotenv
+- express
+- mongoose
+- morgan
+- multer
+- jsonwebtoken
+- nodemon
+- prop-types
+- react-scroll-to-bottom
 </p>
 
 ## Команда проекта
@@ -109,9 +126,8 @@ npm run dev
 - react-router-dom
 - redux-toolkit
 - prettier
-- react-loader-spinner
 - prop-types
-- axios 
+- axios
 - react-scroll-to-bottom
 - timeago.js
 - socket.io-client
@@ -121,7 +137,6 @@ npm run dev
 - express
 - mongoose
 - morgan
-- multer
 - jsonwebtoken
 - nodemon
 
@@ -135,3 +150,4 @@ npm run dev
 - socket.io - для создания чата
 - axios - для запросов в бд в чате
 - timeago.js - для вывода времени сообщения в чате
+- morgan - для отслеживания кода запросов в консоли
