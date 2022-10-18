@@ -3,8 +3,9 @@ import { useSelector } from "react-redux";
 import { io } from "socket.io-client";
 import Chat from "./Chat";
 import styles from "./chat.module.css";
+import { serverUrl } from '../../serverUrl'
 
-const socket = io.connect("http://localhost:4000");
+const socket = io.connect(`${serverUrl}`);
 
 const ChatPage = () => {
   const token = useSelector((state) => state.application.token);
