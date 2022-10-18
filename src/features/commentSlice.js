@@ -1,5 +1,6 @@
-const { createSlice, createAsyncThunk } = require("@reduxjs/toolkit");
 import { serverUrl } from '../serverUrl';
+
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 
 const initialState = {
