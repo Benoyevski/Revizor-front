@@ -4,7 +4,7 @@ import { io } from "socket.io-client";
 import Chat from "./Chat";
 import styles from "./chat.module.css";
 
-const socket = io.connect("http://localhost:3001");
+const socket = io.connect("http://localhost:4000");
 
 const ChatPage = () => {
   const token = useSelector((state) => state.application.token);
