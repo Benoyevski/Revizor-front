@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { fetchDiners } from "../../features/dinerSlice";
 import { addDislike, addLike, fetchUsers } from "../../features/userSlice";
+import { serverUrl } from "../../serverUrl";
 import styles from "./card.module.css";
 
 const Card = ({ diner }) => {
@@ -53,7 +54,7 @@ const Card = ({ diner }) => {
         }
       />
       <div className={styles.card_image}>
-        <img src={`http://localhost:4000/img/${diner.name}.jpg`} alt="" />
+        <img src={`${serverUrl}/img/${diner.name}.jpg`} alt="" />
       </div>
       <h3>{diner.name}</h3>
       <span>{star.map((item, index)=>{
