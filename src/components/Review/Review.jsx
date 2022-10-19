@@ -8,6 +8,7 @@ import { rateDiner } from "../../features/dinerSlice";
 import { addReview, fetchReviews } from "../../features/commentSlice";
 import styles from "./review.module.css";
 import { ColorRing } from "react-loader-spinner";
+import { serverUrl } from "../../serverUrl";
 
 const Review = () => {
   const dispatch = useDispatch();
@@ -113,7 +114,7 @@ const Review = () => {
           <div className={styles.plusMinus}>
             <img
               className={styles.img}
-              src="http://localhost:4000/img/plusminus.png"
+              src={`${serverUrl}/img/plusminus.png`}
               alt="plus"
             />
             <div className={styles.midle}>
@@ -158,7 +159,7 @@ const Review = () => {
                   <div className={styles.logo}>
                     <img
                       className={styles.imgCom}
-                      src="http://localhost:4000/img/avatar.png"
+                      src={`${serverUrl}/img/avatar.png`}
                       alt="plus"
                     />
                     <p className={styles.p}>{item.user.login}</p>
@@ -183,7 +184,7 @@ const Review = () => {
                 <div className={styles.midleCom}>
                   <img
                     className={styles.imgPlusCom}
-                    src="http://localhost:4000/img/plusminus.png"
+                    src={`${serverUrl}/img/plusminus.png`}
                     alt="plus"
                   />
                   <div className={styles.plusMinusCom}>

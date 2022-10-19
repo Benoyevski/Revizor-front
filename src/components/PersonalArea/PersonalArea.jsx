@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 import { fetchReviews } from "../../features/commentSlice";
 import { addAvatar, fetchUsers } from "../../features/userSlice";
+import { serverUrl } from "../../serverUrl";
 import CardPersonal from "../CardPersonal/CardPersonal";
 import styles from "./personalArea.module.css";
 
@@ -82,7 +83,7 @@ const PersonalArea = () => {
                       {user.avatar?.length ? (
                         <div className={styles.avatar_img}>
                           <img
-                            src={`http://localhost:4000/public/avatar/${user.avatar}`}
+                            src={`${serverUrl}/public/avatar/${user.avatar}`}
                             alt=""
                           />
                         </div>

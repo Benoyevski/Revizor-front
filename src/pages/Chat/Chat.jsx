@@ -4,6 +4,7 @@ import axios from "axios";
 import { useSelector } from "react-redux";
 import styles from "./chat.module.css";
 import { format } from "timeago.js";
+import { serverUrl } from "../../serverUrl";
 
 const Chat = ({ socket, username, room, avatar }) => {
   const id = useSelector((state) => state.application.id);
@@ -14,7 +15,7 @@ const Chat = ({ socket, username, room, avatar }) => {
   useEffect(() => {
     const getMessages = async () => {
       try {
-        const res = await axios.get("http://localhost:4000/messages");
+        const res = await axios.get(`${serverUrl}/messages`);
         setMessages(res.data);
       } catch (error) {
       }
@@ -23,7 +24,7 @@ const Chat = ({ socket, username, room, avatar }) => {
   }, []);
 
   const sendMessage = async () => {
-    await axios.post("http://localhost:4000/messages", {
+    await axios.post(`${serverUrl}/messages`, {
       text: currentMessage,
       author: id,
     });
@@ -70,8 +71,8 @@ const Chat = ({ socket, username, room, avatar }) => {
                   <img
                     src={
                       mess.author.avatar
-                        ? `http://localhost:4000/public/avatar/${mess.author.avatar}`
-                        : `http://localhost:4000/public/avatar/defaultAva.jpg`
+                        ? `${serverUrl}/public/avatar/${mess.author.avatar}`
+                        : `${serverUrl}//public/avatar/defaultAva.jpg`
                     }
                     alt=""
                   />
@@ -99,7 +100,7 @@ const Chat = ({ socket, username, room, avatar }) => {
                   }
                 >
                   <img
-                    src={`http://localhost:4000/public/avatar/${messageContent.avatar}`}
+                    src={`${serverUrl}//public/avatar/${messageContent.avatar}`}
                     alt=""
                   />
 

@@ -30,7 +30,7 @@ const Cards = () => {
           ? filter.map((diner, index) => {
               return <Card key={index} diner={diner} />;
             })
-          : diners.map((diner, index) => {
+          : diners?.map((diner, index) => {
               return <Card key={index} diner={diner} />;
             })}
         {load && (
