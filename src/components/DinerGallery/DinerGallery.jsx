@@ -4,6 +4,7 @@ import styles from "./dinerGalerey.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
+import { serverUrl } from "../../serverUrl";
 
 const DinerGallery = ({ diner }) => {
   const filteredDiner = diner?.menu.filter((el) => {
@@ -41,7 +42,7 @@ const DinerGallery = ({ diner }) => {
                 <img
                   className={styles.img}
                   key={index}
-                  src={`http://localhost:4000/photo/${item}`}
+                  src={`${serverUrl}/photo/${item}`}
                   alt="img"
                 />
               </div>
@@ -78,7 +79,7 @@ const DinerGallery = ({ diner }) => {
               <img
                 className={styles.menuImg}
                 key={index}
-                src={`http://localhost:4000/photo/${item}`}
+                src={`${serverUrl}/photo/${item}`}
                 alt="img"
               />
             </div>
