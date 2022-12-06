@@ -5,10 +5,10 @@ import { useSelector } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserSecret } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-import { serverUrl } from '../../serverUrl'
-
+import { serverUrl } from "../../serverUrl";
 
 const Header = () => {
+  const [searchValue, setsearchValue] = useState("");
   const token = useSelector((state) => state.application.token);
 
   const id = useSelector((state) => state.application.id);
@@ -17,6 +17,10 @@ const Header = () => {
 
   const handleAuth = () => {
     setModal(true);
+  };
+
+  const handleSearch = (e) => {
+    setsearchValue(e.target.value);
   };
 
   return (
@@ -33,7 +37,12 @@ const Header = () => {
             </Link>
           </p>
           <div>
-            <input className={styles.header_input} type="text" />
+            <input
+              onChange={handleSearch}
+              value={searchValue}
+              className={styles.header_input}
+              type="text"
+            />
             <img
               className={styles.lupa}
               src={`${serverUrl}/public/lupa.png`}
@@ -51,7 +60,6 @@ const Header = () => {
             </p>
           )}
 
-        
           {id ? (
             <div>
               <Link to={`/personal/${id}`} className={styles.profil}>

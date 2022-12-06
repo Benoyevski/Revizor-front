@@ -5,7 +5,12 @@ import Chat from "./Chat";
 import styles from "./chat.module.css";
 import { serverUrl } from '../../serverUrl'
 
-const socket = io.connect(`${serverUrl}`);
+const socket = io.connect(`${serverUrl}`, {
+  withCredentials: true,
+  extraHeaders: {
+    "my-custom-header": "abcd"
+  }
+});
 
 const ChatPage = () => {
   const token = useSelector((state) => state.application.token);
@@ -16,7 +21,7 @@ const ChatPage = () => {
   useEffect(() => {
     const joinRoom = () => {
       if (username !== "" && room !== "") {
-        socket.emit("join_room", room);
+        socket?.emit("join_room", room);
       }
     };
     joinRoom();
