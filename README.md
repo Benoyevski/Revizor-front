@@ -55,17 +55,7 @@ npm run dev
 - Prettier
 - Github
 - git 
-- Node.js
 - JavaScript
-- bcrypt
-- cors
-- dotenv
-- express
-- mongoose
-- morgan
-- multer
-- jsonwebtoken
-- nodemon
 - prop-types
 - react-scroll-to-bottom
 </p>
