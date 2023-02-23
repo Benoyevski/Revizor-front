@@ -52,12 +52,10 @@ const Header = () => {
         </div>
         <div className={styles.review_and_btn}>
           {token && (
-            <p>
               <Link to="/chat" className={styles.chat_link}>
                 <img src={`${serverUrl}/public/chat.png`} alt="" />
                 Чат
               </Link>
-            </p>
           )}
 
           {id ? (
