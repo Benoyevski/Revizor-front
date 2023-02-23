@@ -10,6 +10,7 @@ import Review from "./components/Review/Review";
 
 function App() {
   return (
+    <div className="wrapper">
     <div className="container">
       <Header />
       <div style={{minHeight: '80vh'}} >
@@ -22,6 +23,8 @@ function App() {
       </Routes>
       </div>
       <Footer />
+    </div>
+
     </div>
   );
 }
