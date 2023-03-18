@@ -18,6 +18,19 @@
   box-shadow: 0px -5px 20px -5px rgba(34, 60, 80, 0.78) inset;
 }
 
+@media (max-width: 1200px) {
+  header {
+    padding: 0 2%;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 0 1%;
+  }
+}
+
+
 
 
 .header_items {
@@ -45,18 +58,6 @@
     font-size: 20px !important;
   }
 
-  /* .logo {
-    width: 45px !important;
-    height: 45px !important;
-  }
-
-  .logo img {
-    width: 35px !important;
-    height: 25px !important;
-    top: 9px !important;
-    left: 5px !important;
-  } */
-
   .header {
     padding: 0 5%;
   }
@@ -64,19 +65,6 @@
   .header_input {
     width: 230px;
   }
-
-  /* .auth_btn {
-    font-size: 12px !important;
-    height: 35px !important;
-  }
-
-  .review p {
-    font-size: 14px !important;
-  }
-
-  .review {
-    margin: auto 20px !important;
-  } */
 }
 
 .logo {
@@ -284,6 +272,15 @@
   .chat_link {
     margin-right: 40px;
     padding: 0;
+ 
+  }
+}
+
+@media (max-width: 768px) {
+  .chat_link {
+    margin-right: 30px;
+    padding: 0;
+    margin-left: 10px;
  
   }
 }
