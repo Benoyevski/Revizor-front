@@ -7,7 +7,7 @@
   -webkit-box-shadow: 0px -14px 45px 46px rgba(34, 60, 80, 0.39) inset;
   -moz-box-shadow: 0px -14px 45px 46px rgba(34, 60, 80, 0.39) inset;
   box-shadow: 0px -14px 45px 46px rgba(117, 81, 34, 0.39) inset;
-
+  box-sizing:border-box;
 }
 
 @media screen and (max-width: 1100px) {

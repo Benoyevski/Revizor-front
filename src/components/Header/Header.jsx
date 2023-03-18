@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import styles from "./header.module.css";
+import styles from "./header2.module.css";
 import Auth from "../Authorization/Auth";
 import { useSelector } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserSecret } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-import { serverUrl } from "../../serverUrl";
 
 const Header = () => {
   const [searchValue, setsearchValue] = useState("");
@@ -26,51 +25,45 @@ const Header = () => {
   return (
     <>
       {modal ? <Auth setModal={setModal} /> : null}
-      <div className={styles.header}>
-        <div className={styles.header_items}>
-          <div className={styles.logo}>
-            <img src={`${serverUrl}/public/logo.png`} alt="" />
-          </div>
-          <p>
-            <Link to="/" className={styles.site_name}>
+        <div className={styles.header}>
+          <div className={styles.logoDiv}>
+            <img src={`imgs/logo.png`} alt="" />
+            <Link to="/" className={styles.title}>
               GOGOL-MOGOL
             </Link>
-          </p>
-          <div>
+          </div>
+          <div className={styles.inputDiv}>
             <input
               onChange={handleSearch}
               value={searchValue}
-              className={styles.header_input}
+              className={styles.inputItem}
               type="text"
             />
             <img
               className={styles.lupa}
-              src={`${serverUrl}/public/lupa.png`}
+              src={`imgs/lupa.png`}
               alt=""
             />
           </div>
-        </div>
-        <div className={styles.review_and_btn}>
-          {token && (
-              <Link to="/chat" className={styles.chat_link}>
-                <img src={`${serverUrl}/public/chat.png`} alt="" />
+          <div className={styles.authDiv}>
+            {token && (
+              <Link to="/chat" className={styles.chat}>
+                <img src={`imgs/chat.png`} alt="" />
                 Чат
               </Link>
-          )}
-
-          {id ? (
-            <div>
-              <Link to={`/personal/${id}`} className={styles.profil}>
+            )}
+              
+            {id ? (
+              <Link to={`/personal/${id}`} className={styles.lkIcon}>
                 <FontAwesomeIcon color="black" icon={faUserSecret} />
               </Link>
-            </div>
-          ) : (
+            ) : (
             <button onClick={handleAuth} className={styles.auth_btn}>
               Войти
             </button>
-          )}
+            )}
+          </div>  
         </div>
-      </div>
     </>
   );
 };
