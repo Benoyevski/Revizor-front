@@ -1,306 +1,213 @@
-/*/////////////////=== =LOGO= = = = //////////////*/
-
-* {
-  font-family: "Montserrat", sans-serif;
-}
-
 .header {
-  background-color: rgb(255, 255, 255);
-  width: 100%;
-  height: 80px;
-
-  display: flex;
-  flex-direction: row;
-  padding: 0 8%;
-  justify-content: space-between;
-  -webkit-box-shadow: 0px -5px 20px -5px rgba(34, 60, 80, 0.78) inset;
-  -moz-box-shadow: 0px -5px 20px -5px rgba(34, 60, 80, 0.78) inset;
-  box-shadow: 0px -5px 20px -5px rgba(34, 60, 80, 0.78) inset;
+    width: 100%;
+    height: 70px;
+    max-height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
 }
 
-@media (max-width: 1200px) {
-  header {
-    padding: 0 2%;
-  }
+@media (max-width: 1280px) {
+    .header {
+        padding: 0 30px;
+    }
 }
 
-@media (max-width: 768px) {
-  header {
-    padding: 0 1%;
-  }
+@media (max-width: 819px) {
+    .header {
+        height: 50px;
+        padding: 0 5px;
+      }
 }
 
-
-
-
-.header_items {
-  display: flex;
-  flex-direction: row;
+.logoDiv, .inputDiv, .authDiv {
+    width: 33.33%;
 }
 
-.header p {
-  margin: auto 30px;
-  font-size: 30px;
-  font-weight: normal;
+.logoDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-.header_input {
-  width: 320px;
-  height: 45px;
-  font-size: 18px;
-  border-radius: 1000px;
-  border: 2px solid lightgray;
-  padding-left: 45px;
+@media (max-width: 819px) {
+    .logoDiv, .authDiv {
+        width: 50%;
+    }
 }
 
-@media (max-width: 1200px) {
-  .header_items p {
-    font-size: 20px !important;
-  }
-
-  .header {
-    padding: 0 5%;
-  }
-
-  .header_input {
-    width: 230px;
-  }
+.logoDiv img {
+    width: 80px;
+    height: 60px;
 }
 
-.logo {
-  margin: auto 0;
-  width: 55px;
-  height: 55px;
-  border: none;
-  border-radius: 100px;
-  background-color:transparent;
-  position: relative;
-  margin-right: 5px;
+@media (max-width: 1280px) {
+    .logoDiv img  {
+        width: 70px;
+        height: 50px;
+    }
 }
 
-.logo img {
-  position: absolute;
-  top: 0px;
-  /* left: -10px; */
-  margin: 0 auto;
-  width: 85px;
-  height: 55px;
-  border-radius:30%;
-}
-@media (max-width: 1200px) {
- 
-  .logo img {
-  top: 8px;
-  left: 0px;
-  width: 65px;
-  height: 45px;
-  }
-
-  
-.header p {
-  margin: auto 20px;
-  font-size: 30px;
-  font-weight: normal;
-}
+@media (max-width: 819px) {
+    .logoDiv img  {
+        width: 50px;
+        height: 35px;
+    }
 }
 
-@media (max-width: 768px) {
-  
+.title {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 26px;
+    letter-spacing: .1cm;
+}
+
+@media (max-width: 1280px) {
+    .title {
+        font-size: 20px;
+        letter-spacing: .04cm;
+    }
+}
+
+@media (max-width: 819px) {
+    .title {
+        font-size: 16px;
+        letter-spacing: .02cm;
+        
+    }
+}
+
+img {
+    width: 40px;
+    height: 40px;
+}
+@media (max-width: 1280px) {
+    img {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media (max-width: 819px) {
+    img {
+        width: 25px;
+        height: 25px;
+    }
 }
 
 
-/*/ ////////////////=== =SEARCH= = = = //////////////*/
-.header_items div {
-  margin: auto 0;
-  position: relative;
+/* = = = = = = == = = = = == = = input*/
+
+.inputDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+@media (max-width: 1280px) {
+    .inputDiv {
+        padding-left: 30px;
+    }
+}
+
+@media (max-width: 819px) {
+    .inputDiv {
+        display: none;
+    }
 }
 
 
+.inputItem {
+    width: 100%;
+    height: 45px;
+    border-radius: 20px;
+    font-size: 18px;
+    padding-left: 50px;
+    padding-right: 20px;
+    border: 1px solid #000;
+    
+}
+
+@media (max-width: 1280px)  {
+    .inputItem {
+        height: 40px;
+        font-size: 16px;
+    }
+}
 
 .lupa {
-  position: absolute;
-  width: 45px;
-  height: 25px;
-  left: 3px;
-  top: 12px;
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    top: 9px;
+    left: 0px;
 }
 
-/*///////// = = =BUTTON == = =/////////////*/
-
-.auth_btn {
-  height: 45px;
-  margin: auto 0;
-  background-color: black;
-  color: white;
-  border-radius: 1000px;
-  padding: 0 20px;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  border: none;
-}
-
-.auth_btn:hover {
-  background-color: rgb(49, 49, 49);
-}
-
-/* ////////////= = = === REVIEW -= = = = == /////////////*/
-.review_and_btn {
-  display: flex;
-  align-content: center;
-  justify-content: flex-end;
-  margin: auto 0;
-  max-width: 50%;
+@media (max-width: 1280px)  {
+    .lupa {
+        width: 40px;
+        height: 25px;
+        top: 9px;
+        left: 30px;
+    }
 }
 
 
 
+/*= = = = ==    auth     = = = = ==*/
 
-.profil {
-  padding: 5px;
-  border-radius: 10px;
-  text-decoration: none;
-  color: black;
-  cursor: pointer;
-  font-size: 30px;
-  transition: all 0.3s;
+.authDiv {
+    display: flex;
+    align-items: center;
+    justify-content: end;
 }
 
-
-.profil:hover {
-  box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
-}
-.profil:active {
-  box-shadow: inset 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
+.lkIcon {
+    margin-left: 100px;
+    font-size: 30px;
 }
 
-.review {
-  cursor: pointer;
-  border-radius: 1000px;
-  height: 35px;
-  display: flex;
-  margin: auto 50px;
+@media (max-width: 1280px) {
+    .lkIcon {
+        font-size: 25px;
+    }
 }
 
-@media (max-width: 1200px) {
-  .review {
-    margin: auto 20px;
- 
-  }
+@media (max-width: 819px) {
+    .lkIcon {
+        font-size: 22px;
+        margin-right: 10px;
+        margin-left: 40px;
+    }
 }
 
-.review:hover {
-  box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
-}
-.review:active {
-  box-shadow: inset 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-.review img {
-  width: 25px;
-  height: 25px;
-  margin: auto 3px;
+.chat {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-family: 'El Messiri', sans-serif;
 }
 
-.review p {
-  font-size: 18px;
-  font-weight: 600;
-  margin: auto;
-  margin-right: 10px;
-}
-/* 
-@media screen and (max-width: 768px) {
-  .header_items p {
-    font-size: 16px !important;
-  }
-
-  .logo {
-    width: 35px !important;
-    height: 35px !important;
-  }
-
-  .logo img {
-    width: 30px !important;
-    height: 20px !important;
-    top: 7px !important;
-    left: 2px !important;
-  }
-
-  .header {
-    padding: 0 5%;
-  }
-
-  .header_input {
-    width: 160px !important;
-    height: 35px;
-  }
-
-  .lupa {
-    top: 3px;
-    left: 4px;
-  }
-
-  .auth_btn {
-    font-size: 12px !important;
-    height: 35px !important;
-  }
-
-  .review p {
-    font-size: 14px !important;
-  }
-
-  .review {
-    margin: auto 20px !important;
-  }
-} */
-
-.chat_link {
-  font-size: 18px !important;
-  font-weight: 600 !important;
-  cursor: pointer;
-  border-radius: 1000px;
-  display: flex;
-  padding: 5px 10px;
-  height: 35px;
-  align-items: center;
-  text-decoration: none;
-  color: black;
-  margin-right: 70px;
+@media (max-width: 1280px) {
+    .chat {
+        font-size: 20px;
+    }
 }
 
-@media (max-width: 1200px) {
-  .chat_link {
-    margin-right: 40px;
-    padding: 0;
- 
-  }
+@media (max-width: 819px) {
+    .chat {
+        font-size: 18px;
+    }
 }
 
-@media (max-width: 768px) {
-  .chat_link {
-    margin-right: 30px;
-    padding: 0;
-    margin-left: 10px;
- 
-  }
-}
-
-.chat_link img {
-  width: 35px;
-  margin-right: 5px;
-}
-
-.chat_link:hover {
-  box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
-}
-.chat_link:active {
-  box-shadow: inset 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-.site_name {
-  text-decoration: none;
-  color: black;
-  font-weight: 600;
-  font-family: 'Cinzel Decorative', cursive;
-  margin-left: 10px;
+.chat img {
+    margin-right: 10px;
+    font-family: "Montserrat", sans-serif;
 }
