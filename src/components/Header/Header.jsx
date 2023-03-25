@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "./header2.module.css";
+import styles from "./header.module.css";
 import Auth from "../Authorization/Auth";
 import { useSelector } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
