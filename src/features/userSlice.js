@@ -9,7 +9,13 @@ const initialState = {
 
 export const fetchUsers = createAsyncThunk("get/users", async (_, thunkAPI) => {
   try {
-    const res = await fetch(`${serverUrl}/users`);
+    const res = await fetch(`${serverUrl}/users`, {
+      method: "GET",
+      mode: "cors",
+      headers: {
+        	"Access-Control-Allow-Origin": "*"
+      }
+    });
     const users = res.json();
     return users;
   } catch (e) {
