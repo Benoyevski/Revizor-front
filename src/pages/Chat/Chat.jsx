@@ -15,7 +15,9 @@ const Chat = ({ socket, username, room, avatar }) => {
   useEffect(() => {
     const getMessages = async () => {
       try {
-        const res = await axios.get(`${serverUrl}/messages`);
+        const res = await axios.get(`${serverUrl}/messages`, {
+          "Access-Control-Allow-Origin": "*"
+        });
         setMessages(res.data);
       } catch (error) {
       }
