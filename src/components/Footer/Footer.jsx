@@ -16,21 +16,18 @@ import {
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <div className={styles.subGeneral}>
-       
-        <div className={styles.block2}>
-        <p className={styles.content}>Работаем для Вас с 1991 года!</p>
+        <div className={styles.icons}>
           <FontAwesomeIcon fontSize="50px" className={styles.icon} icon={faInstagram} />
           <FontAwesomeIcon fontSize="50px" className={styles.icon} icon={faFacebook} />
           <FontAwesomeIcon fontSize="50px" className={styles.icon} icon={faTelegram} />
           <FontAwesomeIcon fontSize="50px" className={styles.icon} icon={faYoutube} />
           <FontAwesomeIcon fontSize="50px" className={styles.icon} icon={faWhatsapp} />
-          <p className={styles.content}>8(800)-555-35-35</p>
         </div>
-      </div>
-      <div className={styles.dno}>
-        © GogoLь-MogoLь, 2022 г. Все права защищены.
-      </div>
+        <p className={styles.contact}>8(800)-555-35-35</p>
+
+        <div className={styles.dno}>
+        © Gogol-Mogol, 2022 г. Все права защищены.
+        </div>
     </footer>
   );
 };

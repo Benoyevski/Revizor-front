@@ -21,7 +21,7 @@ const Cards = () => {
   });
 
   return (
-    <div className={styles.cards_container}>
+    <div className={styles.main_content}>
       <div className={styles.saidBar_container}>
         <SaidBar setPrice={setPrice} price={price} />
       </div>
