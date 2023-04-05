@@ -1,4 +1,4 @@
-.main{
+.main {
     position: relative;
     transition: all 0.4s;
     margin-bottom: 25px;
@@ -10,20 +10,28 @@
     align-items: center;
     overflow: hidden;
     box-shadow: 0px 0px 10px 3px rgba(128, 128, 128, 0.121);
-    margin-right: 1.3%;
+}
 
+@media (max-width: 1280px) {
+    .main {
+        width: 47%;
+    }
+}
+
+@media (max-width: 819px) {
+    .main {
+        width: 100%;
+    }
 }
 
 .main h3 {
     color: rgb(0, 0, 0);
-
 }
 
 .main:hover {
     box-shadow: 0px 0px 10px 3px rgba(128, 128, 128, 0.654);
-
 }
-.mark{
+.mark {
     transition: all 0.5s;
     cursor: pointer;
     font-size: 30px;
@@ -33,42 +41,39 @@
     right: 10%;
     top: -10px;
 }
-.mark_active{
+.mark_active {
     color: #b70c0c;
     top: -2px;
     height: 35px;
-    
 }
-.main:hover img{
+.main:hover img {
     filter: grayscale(0);
-    
 }
-.main h3{
+.main h3 {
     padding: 3px;
     text-align: center;
     margin-bottom: 0;
 }
-.main hr{    
+.main hr {
     width: 90%;
     background-color: #f2b203;
     padding: 1px;
     border-radius: 10px;
     border: 0;
 }
-.card_image img{
+.card_image img {
     transition: all 0.4s;
     /* filter: grayscale(1); */
     height: 100%;
     width: 100%;
     object-fit: cover;
-    
 }
-.card_image{
+.card_image {
     overflow: hidden;
     width: 100%;
     height: 70%;
 }
-.main button{
+.main button {
     transition: all 0.4s;
     margin: 15px 0 15px 0;
     border: 0;
@@ -79,115 +84,21 @@
     width: 70%;
     height: 8%;
 }
-.main button:hover{
+.main button:hover {
     box-shadow: 0 0 10px 5px white;
     background-color: black;
 }
-.rating{
+.rating {
     font-size: 25px;
-    color:#f2b203
+    color: #f2b203;
 }
-.ratingDis{
+.ratingDis {
     font-size: 25px;
-    color:black
+    color: black;
 }
 
 .address {
     height: 20px;
     text-align: center;
     font-size: 12px;
-} 
-
-
-
- /* темная тема */
-
-/* .main{
-    position: relative;
-    transition: all 0.4s;
-    margin-bottom: 25px;
-    border-radius: 8px;
-    width: 32%;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-
-    box-shadow: 0px 0px 10px 0px rgba(43, 50, 102, 0.654);
-    margin-right: 1.3%;
-    background-color:rgb(20, 33, 53)
 }
-
-.main h3 {
-    color: rgb(239, 192, 104);
-    padding: 3px;
-    text-align: center; 
-    margin: 5px auto;
-height:max-content;
-
-}
-
-.main:hover {
-    box-shadow: 0px 0px 10px 3px rgba(128, 128, 128, 0.654);
-
-}
-.mark{
-    transition: all 0.5s;
-    cursor: pointer;
-    font-size: 30px;
-    position: absolute;
-    z-index: 99;
-    color: rgb(216, 179, 14);
-    right: 10%;
-    top: -10px;
-}
-.mark_active{
-    color: #b70c0c;
-    top: -2px;
-    height: 35px;
-    
-}
-.main:hover img{
-    filter: grayscale(0);
-    
-}
-
-.card_image img{
-    transition: all 0.4s;
-
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    
-}
-.card_image{
-    overflow: hidden;
-    width: 100%;
-    height: 70%;
-}
-.main button{
-    transition: all 0.4s;
-    margin: 15px 0 15px 0;
-    border: 0;
-    border-radius: 10px;
-    background-color: #d59713;
-    font-size: 14px;
-    color: white;
-    width: 70%;
-    height: 8%;
-}
-.main button:hover{
-    box-shadow: 0 0 10px 5px white;
-    background-color: black;
-}
-.raiting{
-    font-size: 25px;
-    color:  rgb(239, 192, 104)
-}
-
-.address {
-    height: 20px;
-    text-align: center;
-    font-size: 12px;
-} */
