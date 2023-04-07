@@ -18,7 +18,7 @@
 }
 
 .info {
-    border: 1px solid #ffc800;
+    border: 1px solid #ffb700;
     padding: 20px;
     width: 32%;
     text-align: center;
@@ -40,7 +40,7 @@
 
 .infoTitle {
     text-align: center;
-    color: #ffc800;
+    color: #ffb700;
     margin-bottom: 10px;
     min-height: 30px;
 }

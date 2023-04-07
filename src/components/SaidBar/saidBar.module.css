@@ -8,7 +8,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-color: bisque; */
 }
 
 .main hr{
@@ -43,7 +42,7 @@ input[type="number"]:focus {
     margin-left: 10px;
     border: none;
     padding: 10px;
-    background-color:#d58113;
+    background-color:#ffb700;
     font-size: 15px;
     color: rgb(0, 0, 0);
 }
