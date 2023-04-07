@@ -27,14 +27,17 @@
         width: 400px;
         padding: 1% 2%;
         padding-bottom: 50px;
+        font-size: 16px;
     }
 }
 
 @media (max-width: 819px) {
     .auth_modal {
-        width: 300px;
+        width: 340px;
         padding: 1% 2%;
         padding-bottom: 30px;
+        font-size: 14px;
+
     }
 }
 
@@ -88,8 +91,8 @@
     .login_input,
     .password_input,
     .email_input {
-        margin: 8px auto;
-        padding: 8px;
+        margin: 6px auto;
+        padding: 6px;
         font-size: 16px;
     }
 }
@@ -98,8 +101,8 @@
     .login_input,
     .password_input,
     .email_input {
-        margin: 6px auto;
-        padding: 6px;
+        margin: 3px auto;
+        padding: 4px 10px;
         font-size: 14px;
     }
 }
@@ -140,6 +143,7 @@
         margin: 8px auto;
         padding: 8px;
         font-size: 16px;
+        margin-top: 30px;
     }
 }
 
@@ -149,6 +153,7 @@
         margin: 6px auto;
         padding: 6px;
         font-size: 14px;
+        margin-top: 30px;
     }
 }
 
@@ -159,6 +164,19 @@
 .auth_modal label {
     margin-left: 10px;
     margin-top: 5px;
+}
+
+@media (max-width: 1280px) {
+  .auth_modal label {
+    margin-left: 5px;
+}
+}
+
+@media (max-width: 819px) {
+  .auth_modal label {
+    margin-left: 3px;
+    margin-top: 2px;
+}
 }
 
 .no_account {
@@ -186,6 +204,19 @@
     margin-left: 40px;
     color: rgb(58, 57, 57);
 }
+@media (max-width: 1280px) {
+    .back p {
+        margin-left: 0px;
+        font-size: 14px;
+        
+    }
+}
+@media (max-width: 819px) {
+    .back p {
+        margin-left: 20px;
+        font-size: 14px;
+    }
+}
 
 .back_btn {
     border-radius: 1000px;
@@ -205,9 +236,33 @@
     left: 16px;
 }
 
+@media (max-width: 1280px) {
+    .back_btn {
+        left: 45px;
+        margin-right: 0;
+    }
+}
+@media (max-width: 819px) {
+    .back_btn {
+        left: 25px;
+    }
+}
+
 .back_btn:hover {
     width: 240px;
     transition: 0.5s;
+}
+
+@media (max-width: 1280px) {
+    .back_btn:hover {
+        width: 275px;
+    }
+}
+
+@media (max-width: 819px) {
+    .back_btn:hover {
+        width: 220px;
+    }
 }
 
 .load {
