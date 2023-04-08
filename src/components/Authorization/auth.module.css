@@ -26,7 +26,7 @@
     .auth_modal {
         width: 400px;
         padding: 1% 2%;
-        padding-bottom: 50px;
+        padding-bottom: 30px;
         font-size: 16px;
     }
 }
@@ -35,7 +35,7 @@
     .auth_modal {
         width: 340px;
         padding: 1% 2%;
-        padding-bottom: 30px;
+        padding-bottom: 15px;
         font-size: 14px;
 
     }
@@ -53,14 +53,14 @@
 @media (max-width: 1280px) {
     .auth_modal h3 {
         font-size: 22px;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
 }
 
 @media (max-width: 819px) {
     .auth_modal h3 {
         font-size: 18px;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
 }
 
@@ -91,8 +91,8 @@
     .login_input,
     .password_input,
     .email_input {
-        margin: 6px auto;
-        padding: 6px;
+        margin: auto;
+        padding: 5px 10px;
         font-size: 16px;
     }
 }
@@ -140,20 +140,20 @@
 @media (max-width: 1280px) {
     .singIn,
     .reg {
-        margin: 8px auto;
+        margin: 0px auto;
         padding: 8px;
         font-size: 16px;
-        margin-top: 30px;
+        margin-top: 20px;
     }
 }
 
 @media (max-width: 819px) {
     .singIn,
     .reg {
-        margin: 6px auto;
+        margin: auto;
         padding: 6px;
         font-size: 14px;
-        margin-top: 30px;
+        margin-top: 15px;
     }
 }
 
