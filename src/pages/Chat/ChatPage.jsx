@@ -25,10 +25,10 @@ const ChatPage = () => {
       }
     };
     joinRoom();
-  }, []);
+  }, [username]);
 
   return (
-    <div className={styles.chat_page_body}>
+    <div className={styles.chatPageWrapper}>
       {token ? (
 
           <div className={styles.joinChatContainer}>

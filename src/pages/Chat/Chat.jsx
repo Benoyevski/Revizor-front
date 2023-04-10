@@ -76,7 +76,7 @@ const Chat = ({ socket, username, room, avatar }) => {
                         ? `${serverUrl}/public/avatar/${mess.author.avatar}`
                         : `${serverUrl}//public/avatar/defaultAva.jpg`
                     }
-                    alt=""
+                    alt="ava"
                   />
                   <div className={styles.mess_wrap}>
                     <div className={styles.message_content}>
@@ -131,7 +131,7 @@ const Chat = ({ socket, username, room, avatar }) => {
             e.key === "Enter" && sendMessage();
           }}
         />
-        <button onClick={sendMessage}>&#9658;</button>
+        <button disabled={!currentMessage} onClick={sendMessage}>Отправить</button>
       </div>
     </>
   );
