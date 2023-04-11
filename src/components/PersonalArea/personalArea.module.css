@@ -116,6 +116,7 @@
 .personal_navbar {
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
 }
 
 .personal_navbar div {
@@ -132,8 +133,6 @@
   padding: 15px;
   background-color: rgb(255, 255, 255);
   min-height: 250px;
-  /* display: flex;
-  flex-direction: column; */
 }
 
 .pers_info span {
