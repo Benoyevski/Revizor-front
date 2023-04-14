@@ -37,13 +37,11 @@
         padding: 1% 2%;
         padding-bottom: 15px;
         font-size: 14px;
-
     }
 }
 
 .auth_modal h3 {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-        sans-serif;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     font-size: 24px;
     margin-bottom: 30px;
     color: #fff;
@@ -107,7 +105,8 @@
     }
 }
 
-.singIn {
+.singIn,
+.reg {
     margin: 10px auto;
     width: 45%;
     padding: 10px;
@@ -120,22 +119,12 @@
     margin-top: 30px;
     box-shadow: 0px 5px 10px 2px rgba(185, 183, 183, 0.255);
 }
-.singIn:hover {
+.singIn:hover, .reg:hover {
     background: rgb(73, 73, 73);
 }
 
 .reg {
-    margin: 10px auto;
     width: 60%;
-    padding: 10px;
-    border-radius: 10px;
-    font-size: 18px;
-    border: 1px solid white;
-    background: black;
-    color: white;
-    cursor: pointer;
-    margin-top: 30px;
-    box-shadow: 0px 5px 10px 2px rgba(185, 183, 183, 0.255);
 }
 @media (max-width: 1280px) {
     .singIn,
@@ -157,26 +146,22 @@
     }
 }
 
-.reg:hover {
-    background: rgb(73, 73, 73);
-}
-
 .auth_modal label {
     margin-left: 10px;
     margin-top: 5px;
 }
 
 @media (max-width: 1280px) {
-  .auth_modal label {
-    margin-left: 5px;
-}
+    .auth_modal label {
+        margin-left: 5px;
+    }
 }
 
 @media (max-width: 819px) {
-  .auth_modal label {
-    margin-left: 3px;
-    margin-top: 2px;
-}
+    .auth_modal label {
+        margin-left: 3px;
+        margin-top: 2px;
+    }
 }
 
 .no_account {
@@ -208,7 +193,6 @@
     .back p {
         margin-left: 0px;
         font-size: 14px;
-        
     }
 }
 @media (max-width: 819px) {
