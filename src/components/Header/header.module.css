@@ -7,7 +7,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 80px;
-    box-shadow: 0 8px 5px -5px #0000001d;;
+    box-shadow: 0 8px 5px -5px #0000001d;
 }
 
 @media (max-width: 1280px) {
@@ -20,6 +20,13 @@
     .header {
         height: 50px;
         padding: 0 15px;
+    }
+}
+
+@media (max-width: 550px) {
+    .header {
+        height: 45px;
+        padding: 0 10px;
     }
 }
 
@@ -42,6 +49,16 @@
     }
 }
 
+@media (max-width: 550px) {
+    .logoDiv {
+        width: 60%;
+    }
+
+    .authDiv {
+        width: 40%;
+    }
+}
+
 .logoDiv img {
     width: 80px;
     height: 60px;
@@ -58,6 +75,13 @@
     .logoDiv img {
         width: 50px;
         height: 35px;
+    }
+}
+
+@media (max-width: 550px) {
+    .logoDiv img {
+        width: 45px;
+        height: 30px;
     }
 }
 
@@ -84,6 +108,12 @@
     }
 }
 
+@media (max-width: 550px) {
+    .title {
+        font-size: 13px;
+    }
+}
+
 img {
     width: 40px;
     height: 40px;
@@ -99,6 +129,13 @@ img {
     img {
         width: 25px;
         height: 25px;
+    }
+}
+
+@media (max-width: 550px) {
+    img {
+        width: 20px;
+        height: 20px;
     }
 }
 
@@ -184,6 +221,14 @@ img {
     }
 }
 
+@media (max-width: 550px) {
+    .lkIcon {
+        font-size: 20px;
+        margin-right: 5px;
+        margin-left: 25px;
+    }
+}
+
 .chat {
     text-decoration: none;
     color: #000;
@@ -202,6 +247,12 @@ img {
 @media (max-width: 819px) {
     .chat {
         font-size: 18px;
+    }
+}
+
+@media (max-width: 550px) {
+    .chat {
+        font-size: 16px;
     }
 }
 
@@ -230,5 +281,12 @@ img {
     .auth_btn {
         padding: 3px 15px;
         font-size: 13px;
+    }
+}
+
+@media (max-width: 550px) {
+    .auth_btn {
+        padding: 2px 12px;
+        font-size: 12px;
     }
 }
