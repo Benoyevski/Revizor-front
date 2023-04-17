@@ -7,6 +7,8 @@ const Picture = () => {
         backgroundImage: `url(${serverUrl}/public/back_pic.png)`,
     };
 
+    
+
     return (
         <div style={backImgUrl} className={styles.picture}>
             <h1>Найдите идеальный ресторан</h1>
