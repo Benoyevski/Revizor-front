@@ -17,6 +17,15 @@
     }
 }
 
+@media (max-width: 550px) {
+    .container {
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10px;
+    }
+}
+
 .info {
     border: 1px solid #ffb700;
     padding: 20px;
@@ -38,6 +47,18 @@
     }
 }
 
+@media (max-width: 550px) {
+    .info {
+        width: 90%;
+        padding: 5px;
+        font-size: 11px;
+    }
+
+    .info:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
+
 .infoTitle {
     text-align: center;
     color: #ffb700;
@@ -54,6 +75,13 @@
 @media (max-width: 819px) {
     .infoTitle {
         min-height: 40px;
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 550px) {
+    .infoTitle {
+        min-height: 25px;
         margin-bottom: 0px;
     }
 }
