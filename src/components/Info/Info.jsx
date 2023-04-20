@@ -3,7 +3,6 @@ import React from "react";
 
 const Info = () => {
   return (
-    <div className={styles.general}>
       <div className={styles.container}>
         <div className={styles.info}>
           <h3 className={styles.infoTitle}>Лучшие рестораны</h3>
@@ -28,7 +27,6 @@ const Info = () => {
           </p>
         </div>
       </div>
-    </div>
   );
 };
 

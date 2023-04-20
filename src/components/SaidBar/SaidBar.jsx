@@ -10,6 +10,7 @@ const SaidBar = ({price, setPrice}) => {
     }, [dispatch])
   return (
     <div className={styles.main}>
+      <div className={styles.filterContainer}>
       <div className={styles.filter_check}>
         <span>Кафе</span>
         <input
@@ -53,6 +54,7 @@ const SaidBar = ({price, setPrice}) => {
             dispatch(fetchDiners());
           }}
         />
+      </div>
       </div>
       <hr />
       <div className={styles.price_container}>
