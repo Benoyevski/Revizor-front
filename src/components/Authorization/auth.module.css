@@ -22,7 +22,7 @@
     box-shadow: 0px 5px 10px 2px rgba(1, 1, 1, 0.619);
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1279px) {
     .auth_modal {
         width: 400px;
         padding: 1% 2%;
@@ -48,7 +48,7 @@
     text-align: start;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1279px) {
     .auth_modal h3 {
         font-size: 22px;
         margin-bottom: 15px;
@@ -85,7 +85,7 @@
     box-shadow: 0px 3px 10px 0px rgba(255, 255, 255, 0.255);
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1279px) {
     .login_input,
     .password_input,
     .email_input {
@@ -119,14 +119,15 @@
     margin-top: 30px;
     box-shadow: 0px 5px 10px 2px rgba(185, 183, 183, 0.255);
 }
-.singIn:hover, .reg:hover {
+.singIn:hover,
+.reg:hover {
     background: rgb(73, 73, 73);
 }
 
 .reg {
     width: 60%;
 }
-@media (max-width: 1280px) {
+@media (max-width: 1279px) {
     .singIn,
     .reg {
         margin: 0px auto;
@@ -151,7 +152,7 @@
     margin-top: 5px;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1279px) {
     .auth_modal label {
         margin-left: 5px;
     }
@@ -189,7 +190,7 @@
     margin-left: 40px;
     color: rgb(58, 57, 57);
 }
-@media (max-width: 1280px) {
+@media (max-width: 1279px) {
     .back p {
         margin-left: 0px;
         font-size: 14px;
@@ -220,7 +221,7 @@
     left: 16px;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1279px) {
     .back_btn {
         left: 45px;
         margin-right: 0;
@@ -237,7 +238,7 @@
     transition: 0.5s;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1279px) {
     .back_btn:hover {
         width: 275px;
     }

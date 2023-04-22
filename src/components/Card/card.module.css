@@ -14,7 +14,14 @@
     margin-bottom: 15px;
 }
 
-@media (max-width: 1280px) {
+@media (min-width: 1920px) {
+    .main {
+        width: 23.5%;
+    }
+}
+
+
+@media (max-width: 1279px) {
     .main {
         width: 47%;
     }
@@ -33,7 +40,6 @@
         font-size: 15px;
     }
 }
-
 
 .main h3 {
     color: rgb(0, 0, 0);
@@ -93,13 +99,12 @@
 }
 
 @media (max-width: 819px) {
-    .main button  {
+    .main button {
         padding: 3px 0;
         margin-bottom: 5px;
         font-size: 12px;
     }
 }
-
 
 .rating {
     font-size: 25px;
@@ -111,12 +116,11 @@
 }
 
 @media (max-width: 819px) {
-    .rating, .ratingDis {
+    .rating,
+    .ratingDis {
         font-size: 18px;
-        
     }
 }
-
 
 .address {
     text-align: center;

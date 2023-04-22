@@ -19,13 +19,11 @@
     }
 }
 
-
-
 .icon {
     font-size: 50px;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1279px) {
     .icon {
         font-size: 40px;
     }
@@ -42,4 +40,3 @@
     display: flex;
     justify-content: center;
 }
-

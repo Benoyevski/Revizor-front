@@ -19,8 +19,7 @@
     align-items: center;
 }
 
-
-@media (max-width: 1280px) {
+@media (max-width: 1279px) {
     .picture {
         font-size: 24px;
     }
@@ -43,7 +42,7 @@
     margin-bottom: 20px;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1279px) {
     .picture h1 {
         font-size: 24px;
     }
@@ -62,7 +61,6 @@
     }
 }
 
-
 .picture input {
     padding: 15px;
     font-size: 20px;
@@ -75,7 +73,7 @@
     position: relative;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1279px) {
     .picture input {
         padding: 10px;
         padding-left: 70px;
@@ -110,7 +108,7 @@
     left: 20%;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1279px) {
     .picture img {
         width: 60px;
         height: 30px;
