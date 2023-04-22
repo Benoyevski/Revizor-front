@@ -20,6 +20,7 @@ const Chat = ({ socket, username, room, avatar }) => {
         });
         setMessages(res.data);
       } catch (error) {
+        console.log(error)
       }
     };
     getMessages();
