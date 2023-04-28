@@ -25,7 +25,7 @@ const Footer = () => {
         </div>
         <p className={styles.contact}>8(800)-555-35-35</p>
 
-        <div className={styles.dno}>
+        <div className={styles.rights}>
         © Gogol-Mogol, 2022 г. Все права защищены.
         </div>
     </footer>
