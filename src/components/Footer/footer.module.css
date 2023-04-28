@@ -18,6 +18,12 @@
         gap: 5px;
     }
 }
+@media (max-width: 550px) {
+    .icons {
+        gap: 5px;
+        margin: 10px;
+    }
+}
 
 .icon {
     font-size: 50px;
@@ -36,8 +42,9 @@
     }
 }
 
-.dno {
-    margin-top: 10px;
+.rights {
+    margin-top: 8px;
     display: flex;
     justify-content: center;
+    font-size: 11px;
 }
