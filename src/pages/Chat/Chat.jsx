@@ -75,7 +75,7 @@ const Chat = ({ socket, username, room, avatar }) => {
                     src={
                       mess.author.avatar
                         ? `${serverUrl}/public/avatar/${mess.author.avatar}`
-                        : `${serverUrl}//public/avatar/defaultAva.jpg`
+                        : `${serverUrl}/public/avatar/defaultAva.jpg`
                     }
                     alt="ava"
                   />
@@ -103,7 +103,7 @@ const Chat = ({ socket, username, room, avatar }) => {
                   }
                 >
                   <img
-                    src={`${serverUrl}//public/avatar/${messageContent.avatar}`}
+                    src={`${serverUrl}/public/avatar/${messageContent.avatar}`}
                     alt=""
                   />
 
