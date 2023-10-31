@@ -20,3 +20,9 @@ p {
 .container {
     width: 100%;
 }
+
+@media (max-width: 819px) {
+    .container {
+        width: 96%;
+    }
+}
